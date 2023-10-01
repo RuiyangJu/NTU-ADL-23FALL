@@ -17,12 +17,12 @@ If there are still some packages that have not been installed successfully, you 
 ## Paragraph Selection (multiple choice)
 ### Train
 ```
-  python ./multiple-choice/run_swag_no_trainer.py \
+  python ./multiple-choice/train_mc.py \
     --model_name_or_path bert-base-chinese \
     --train_file ./data/train.json \
     --validation_file ./data/valid.json \
     --context_file ./data/context.json \
-    --max_len 512 \
+    --max_length 512 \
     --per_device_train_batch_size 4 \
     --gradient_accumulation_steps 16 \
     --learning_rate 3e-5 \
