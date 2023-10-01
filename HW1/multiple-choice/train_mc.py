@@ -16,6 +16,7 @@ from accelerate.logging import get_logger
 from accelerate.utils import set_seed
 from huggingface_hub import Repository
 from datasets import load_dataset
+from dataclasses import dataclass
 from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
 
