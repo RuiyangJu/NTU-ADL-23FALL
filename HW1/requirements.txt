@@ -1,0 +1,9 @@
+torch >= 1.3
+accelerate >= 0.12.0
+sentencepiece != 0.1.92
+protobuf
+datasets
+gdown
+evaluate
+transformers
+scikit-learn
