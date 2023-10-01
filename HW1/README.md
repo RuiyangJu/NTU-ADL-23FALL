@@ -10,6 +10,12 @@ If there are still some packages that have not been installed successfully, you 
   pip install accelerate
 ```
 
+## Download
+Use gdown to download trained models, tokenizers and data from Google Drive:
+```
+  bash download.sh
+```
+
 ## Paragraph Selection (multiple choice)
 ### Train
 ```
