@@ -1,9 +1,4 @@
 # Homework 1 for NTU ADL 2023 Fall
-## Path
-Make sure you are in the correct path, otherwise:
-```
-  cd HW1
-```
 ## Envirement Preparation
 ```
   pip install -r requirements.txt
