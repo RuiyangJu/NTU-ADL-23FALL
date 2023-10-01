@@ -14,6 +14,7 @@ If there are still some packages that have not been installed successfully, you 
 ```
   bash train_mc.sh
 ```
+#### Hyperparameters:
 | model | max_len | batch_size | gradient_accmulation_steps | learning_rate | weight_decay | num_epochs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | bert-base-chinese | 512 | 4 | 16 | 3e-5 | 1e-6 | 10 |
