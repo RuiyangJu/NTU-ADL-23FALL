@@ -30,3 +30,6 @@ If there are still some packages that have not been installed successfully, you 
   --num_train_epochs 10 \
   --output_dir ./output/multiple-choice
 ```
+| model | max_len | batch_size | gradient_accmulation_steps | learning_rate | weight_decay | num_epochs |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| bert-base-chinese | 512 | 4 | 16 | 3e-5 | 1e-6 | 10 |
