@@ -22,13 +22,13 @@ If there are still some packages that have not been installed successfully, you 
     --train_file ./data/train.json \
     --validation_file ./data/valid.json \
     --context_file ./data/context.json \
-    --max_length 512 \
+    --max_len 512 \
     --per_device_train_batch_size 4 \
     --gradient_accumulation_steps 16 \
     --learning_rate 3e-5 \
     --weight_decay 1e-6 \
     --num_train_epochs 10 \
-    --output_dir ./output/multiple-choice
+    --output_dir ./multiple-choice/model
 ```
 | model | max_len | batch_size | gradient_accmulation_steps | learning_rate | weight_decay | num_epochs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
