@@ -17,18 +17,7 @@ If there are still some packages that have not been installed successfully, you 
 ## Paragraph Selection (multiple choice)
 ### Train
 ```
-  python ./multiple-choice/train_mc.py \
-    --model_name_or_path bert-base-chinese \
-    --train_file ./data/train.json \
-    --validation_file ./data/valid.json \
-    --context_file ./data/context.json \
-    --max_length 512 \
-    --per_device_train_batch_size 4 \
-    --gradient_accumulation_steps 16 \
-    --learning_rate 3e-5 \
-    --weight_decay 1e-6 \
-    --num_train_epochs 10 \
-    --output_dir ./multiple-choice/model
+  bash train_mc.sh
 ```
 | model | max_len | batch_size | gradient_accmulation_steps | learning_rate | weight_decay | num_epochs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
