@@ -23,9 +23,9 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 ```
 
 #### Hyperparameters:
-| model | max_len | batch_size | gradient_accmulation_steps | learning_rate | weight_decay | num_epochs |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| bert-base-chinese | 512 | 4 | 16 | 3e-5 | 1e-6 | 10 |
+| model | max_len | batch_size | gradient_accmulation_steps | learning_rate | num_epochs |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| hfl/chinese-macbert-large | 512 | 4 | 16 | 3e-5 | 2 |
 
 ### Test
 ```
