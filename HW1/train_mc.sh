@@ -7,5 +7,5 @@ python ./multiple-choice/train_mc.py \
   --per_device_train_batch_size 4 \
   --gradient_accumulation_steps 16 \
   --learning_rate 3e-5 \
-  --num_train_epochs 10 \
+  --num_train_epochs 2 \
   --output_dir ./multiple-choice/model
