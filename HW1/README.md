@@ -34,3 +34,11 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 
 ## Span Selection (question answering)
 ### Train
+```
+  bash train_qa.sh
+```
+
+#### Hyperparameters:
+| model | max_len | batch_size | gradient_accmulation_steps | learning_rate | num_epochs |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| hfl/chinese-lert-large | 512 | 4 | 16 | 3e-5 | 6 |
