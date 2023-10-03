@@ -306,9 +306,7 @@ def main():
 
     if args.do_predict:
         predict_dataset_for_model = predict_dataset.remove_columns(["example_id", "offset_mapping"])
-        predict_dataloader = DataLoader(
-            predict_dataset_for_model, collate_fn=data_collator, batch_size=args.per_device_eval_batch_size
-        )
+        predict_dataloader = DataLoader(predict_dataset_for_model, collate_fn=data_collator, batch_size=args.per_device_eval_batch_size)
 
     def post_processing_function(examples, features, predictions, stage="eval"):
         predictions = postprocess_qa_predictions(
