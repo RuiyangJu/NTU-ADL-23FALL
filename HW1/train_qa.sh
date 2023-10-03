@@ -3,7 +3,7 @@ python ./question-answering/train_qa.py \
   --train_file ./data/train.json \
   --validation_file ./data/valid.json \
   --context_file ./data/context.json \
-  --max_seq_length 512 \
+  --max_length 512 \
   --per_device_train_batch_size 4 \
   --gradient_accumulation_steps 16 \
   --learning_rate 3e-5 \
