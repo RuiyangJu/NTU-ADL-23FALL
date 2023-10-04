@@ -1,5 +1,5 @@
-# ${1}: path to context.json. (./data)
-# ${2}: path to test.json. (./data)
+# ${1}: path to context.json. (./data/context.json)
+# ${2}: path to test.json. (./data/test.json)
 # ${3}: path to the output prediction file named prediction.csv. (./question-answering/output/output.csv)
 
 python ./multiple-choice/test_mc.py \
