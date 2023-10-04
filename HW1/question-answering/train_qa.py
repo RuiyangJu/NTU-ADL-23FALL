@@ -56,7 +56,7 @@ def main():
 
     if args.with_tracking:
         accelerator_log_kwargs["log_with"] = args.report_to
-        accelerator_log_kwargs["logging_dir"] = args.output_dir
+        accelerator_log_kwargs["project_dir"] = args.output_dir
 
     accelerator = Accelerator(gradient_accumulation_steps=args.gradient_accumulation_steps, **accelerator_log_kwargs)
 
@@ -577,7 +577,7 @@ def parse_args():
     parser.add_argument("--validation_file", type=str, default=None, help="A csv or a json file containing the validation data.")
     parser.add_argument("--test_file", type=str, default=None, help="A csv or a json file containing the Prediction data.")
     parser.add_argument("--context_file", type=str, default=None, help="A csv or a json file containing the context data.")
-    parser.add_argument("--preprocessing_num_workers", type=int, default=1, help="The number of workers to preprocess.")
+    parser.add_argument("--preprocessing_num_workers", type=int, default=12, help="The number of workers to preprocess.")
     parser.add_argument("--max_length", type=int, default=128, help=("The maximum total input sequence length after tokenization. Sequences longer than this will be truncated, sequences shorter will be padded if `--pad_to_max_lengh` is passed."))
     parser.add_argument("--pad_to_max_length", action="store_true", help="If passed, pad all samples to `max_length`. Otherwise, dynamic padding is used.")
     parser.add_argument("--model_name_or_path", type=str, help="Path to pretrained model or model identifier from huggingface.co/models.", required=False)
