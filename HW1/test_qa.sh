@@ -10,4 +10,4 @@ python ./question-answering/test_qa.py \
     --doc_stride 128 \
     --do_predict \
     --per_device_eval_batch_size 1 \
-    --output_dir ./question-answering/output
+    --output_dir ./question-answering/output.csv
