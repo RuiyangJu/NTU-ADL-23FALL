@@ -28,9 +28,10 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 | hfl/chinese-macbert-large | 512 | 4 | 16 | 3e-5 | 2 |
 
 ### Validation
-| model | max_len | batch_size | gradient_accmulation_steps | learning_rate | num_epochs |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| hfl/chinese-macbert-large | 512 | 4 | 16 | 3e-5 | 2 |
+| model | num_epoch | accuracy |
+| :---: | :---: | :---: |
+| hfl/chinese-macbert-large | 1 | 0.9674310402126952 |
+| hfl/chinese-macbert-large | 2 | 0.9641076769690927 |
 
 ### Test
 ```
