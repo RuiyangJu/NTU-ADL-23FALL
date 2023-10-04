@@ -21,6 +21,13 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 bash run.sh /path/to/context.json /path/to/test.json /path/to/pred/prediction.csv
 ```
 
+Traceback (most recent call last):
+  File "multiple-choice\test_mc.py", line 278, in <module>
+    main()
+  File "multiple-choice\test_mc.py", line 229, in main
+    idx = id_list[step*4+i]
+IndexError: list index out of range
+
 ## Paragraph Selection (multiple choice)
 ### Train
 ```
