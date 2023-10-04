@@ -1,4 +1,4 @@
-python ./question-answering/train_qa.py \
+python ./question-answering/test_qa.py \
     --model_name_or_path ./question-answering/model \
     --config_name ./question-answering/model \
     --tokenizer_name ./question-answering/model \
