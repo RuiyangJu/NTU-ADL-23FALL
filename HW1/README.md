@@ -30,8 +30,8 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 ### Validation
 | model | num_epoch | accuracy |
 | :---: | :---: | :---: |
-| hfl/chinese-macbert-large | 1 | 0.9674310402126952 |
-| hfl/chinese-macbert-large | 2 | 0.9641076769690927 |
+| hfl/chinese-macbert-large | 1 | 0.967 |
+| hfl/chinese-macbert-large | 2 | 0.964 |
 
 ### Test
 ```
