@@ -1,6 +1,6 @@
 # ${1}: path to context.json. (./data/context.json)
 # ${2}: path to test.json. (./data/test.json)
-# ${3}: path to the output prediction file named prediction.csv. (./question-answering/output/output.csv)
+# ${3}: path to the output prediction file named prediction.csv. (./output/prediction.csv)
 
 python ./multiple-choice/test_mc.py \
   --model_name_or_path ./multiple-choice/model \
