@@ -47,7 +47,7 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 #### Hyperparameters:
 | model | max_len | batch_size | gradient_accmulation_steps | learning_rate | num_epochs |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| hfl/chinese-lert-large | 512 | 4 | 16 | 3e-5 | 6 |
+| hfl/chinese-lert-large | 512 | 4 | 16 | 3e-5 | 10 |
 
 ### Test
 ```
