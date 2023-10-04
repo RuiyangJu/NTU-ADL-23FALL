@@ -22,7 +22,7 @@ bash run.sh /path/to/context.json /path/to/test.json /path/to/pred/prediction.cs
 ```
 For example:
 ```
-bash run.sh ./data/context.json ./dataset/test.json ./data/output/prediction.csv
+bash run.sh ./data/context.json ./data/test.json ./data/output/prediction.csv
 ```
 
 ## Paragraph Selection (multiple choice)
