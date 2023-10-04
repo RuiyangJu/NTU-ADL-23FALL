@@ -376,7 +376,7 @@ def main():
         prediction = post_processing_function(test_examples, predict_dataset, outputs_numpy)
         print(prediction.predictions[:10])
 
-        with open(output_file, 'w') as f:
+        with open(output_file, 'w', encoding='utf-8-sig') as f:
             f.write('id,answer\n')
             for item in prediction.predictions:
                 f.write(item['id'] + ',"' + item['prediction_text'] + '"\n')
