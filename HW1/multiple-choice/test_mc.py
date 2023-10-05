@@ -212,11 +212,11 @@ def main():
             accelerator.load_state(args.resume_from_checkpoint)
             path = os.path.basename(args.resume_from_checkpoint)
 
-    print('Evaluating:')
+    print('Predict...')
     model.eval()
     pred_dict = {}
     for step, batch in enumerate(test_dataloader):
-        print(f'Evaluating:  {step}/{len(test_dataloader)}', end='\r')
+        print(f'Predict:  {step}/{len(test_dataloader)}', end='\r')
         with torch.no_grad():
             outputs = model(**batch)
             predictions = outputs.logits.argmax(dim=-1)
