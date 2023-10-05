@@ -198,11 +198,6 @@ def main():
 
     model, test_dataloader = accelerator.prepare(model, test_dataloader)
 
-    if args.with_tracking:
-        experiment_config = vars(args)
-        experiment_config["lr_scheduler_type"] = experiment_config["lr_scheduler_type"].value
-        accelerator.init_trackers("swag_no_trainer", experiment_config)
-
     total_batch_size = args.per_device_test_batch_size * accelerator.num_processes * args.gradient_accumulation_steps
 
     logger.info("***** Running training *****")
@@ -232,9 +227,6 @@ def main():
     if args.output_dir is not None:
         with open(args.output_dir+"/predict.json", "w") as outfile:
             json.dump(pred_dict, outfile, indent='\t')
-
-    if args.with_tracking:
-        accelerator.end_training()
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Finetune a transformers model on a multiple choice task")
