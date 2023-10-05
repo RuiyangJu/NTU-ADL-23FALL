@@ -19,9 +19,9 @@ python ./question-answering/test_qa.py \
   --predict_mc_file ./multiple-choice/output/predict_mc.json \
   --context_file ${1} \
   --test_file ${2} \
-  --output_dir ${3}
-  --max_length 512 \
-  --do_predict \
-  --per_device_eval_batch_size 1 \
+  --output_dir ${3} \
   --preprocessing_num_workers 12 \
+  --max_length 512 \
   --doc_stride 128 \
+  --do_predict \
+  --per_device_eval_batch_size 1
