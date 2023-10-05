@@ -200,7 +200,7 @@ def main():
 
     total_batch_size = args.per_device_test_batch_size * accelerator.num_processes * args.gradient_accumulation_steps
 
-    logger.info("***** Running training *****")
+    logger.info("***** Running Predict *****")
     logger.info(f"  Num examples = {len(test_dataset)}")
     logger.info(f"  Instantaneous batch size per device = {args.per_device_test_batch_size}")
     logger.info(f"  Total train batch size (w. parallel, distributed & accumulation) = {total_batch_size}")
