@@ -352,7 +352,7 @@ def main():
         model.eval()
 
         for step, batch in enumerate(predict_dataloader):
-            print(f'Evaluating........  {step}/{len(predict_dataloader)}', end='\r')
+            print(f'Predict: {step}/{len(predict_dataloader)}', end='\r')
             with torch.no_grad():
                 outputs = model(**batch)
                 start_logits = outputs.start_logits
