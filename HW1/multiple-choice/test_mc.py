@@ -225,7 +225,7 @@ def main():
                 pred_dict[idx] = paragtaphs_list[step*4+i][p.item()]
 
     if args.output_dir is not None:
-        with open(args.output_dir+"/predict.json", "w") as outfile:
+        with open(args.output_dir+"/predict_mc.json", "w") as outfile:
             json.dump(pred_dict, outfile, indent='\t')
 
 def parse_args():
