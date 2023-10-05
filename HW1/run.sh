@@ -23,3 +23,5 @@ python ./question-answering/test_qa.py \
   --max_length 512 \
   --do_predict \
   --per_device_eval_batch_size 1 \
+  --preprocessing_num_workers 12 \
+  --doc_stride 128 \
