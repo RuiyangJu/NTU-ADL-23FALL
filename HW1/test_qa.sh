@@ -4,7 +4,7 @@ python ./question-answering/test_qa.py \
   --tokenizer_name ./question-answering/model \
   --test_file ./data/test.json \
   --context_file ./data/context.json \
-  --predict_mc_file ./multiple-choice/output/predict.json \
+  --predict_mc_file ./multiple-choice/output/predict_mc.json \
   --preprocessing_num_workers 12 \
   --max_length 512 \
   --doc_stride 128 \
