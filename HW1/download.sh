@@ -1,5 +1,6 @@
 mkdir ./data
-mkdir ./multiple-choice/model
+mkdir ./multiple-choice/output
+# mkdir ./multiple-choice/model
 mkdir ./question-answering/model
 
 gdown 1Pgbvr3CYRUT8fSwmjszdPdqu_C73vCu0 -O ./data/all_data.zip
