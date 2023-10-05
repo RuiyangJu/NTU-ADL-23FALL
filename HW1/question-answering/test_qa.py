@@ -342,7 +342,7 @@ def main():
             resume_step -= starting_epoch * len(predict_dataloader)
 
     if args.do_predict:
-        logger.info("***** Running Prediction *****")
+        logger.info("***** Running Predict *****")
         logger.info(f"  Num examples = {len(predict_dataset)}")
         logger.info(f"  Batch size = {args.per_device_eval_batch_size}")
 
@@ -352,7 +352,7 @@ def main():
         model.eval()
 
         for step, batch in enumerate(predict_dataloader):
-            print(f'Evaluating........  {step}/{len(predict_dataloader)}', end='\r')
+            print(f'Predict:  {step}/{len(predict_dataloader)}', end='\r')
             with torch.no_grad():
                 outputs = model(**batch)
                 start_logits = outputs.start_logits
