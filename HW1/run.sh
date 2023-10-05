@@ -16,10 +16,10 @@ python ./question-answering/test_qa.py \
   --model_name_or_path ./question-answering/model \
   --config_name ./question-answering/model \
   --tokenizer_name ./question-answering/model \
+  --predict_mc_file ./multiple-choice/output/predict_mc.json \
   --context_file ${1} \
   --test_file ${2} \
-  --predict_mc_file ./multiple-choice/output/predict_mc.json \
+  --output_dir ${3}
   --max_length 512 \
   --do_predict \
   --per_device_eval_batch_size 1 \
-  --output_dir ${3}
