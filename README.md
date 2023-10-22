@@ -10,3 +10,10 @@
 
 ### Kaggle:
 https://www.kaggle.com/competitions/ntuadl2023hw1
+
+## HW2
+### Task Description:
+* Chinese News Summarization (Title Generation)
+
+### Deadline:
+* Code and report (submit to NTU COOL) - 11/08 (Wed.) 23:39
