@@ -36,9 +36,9 @@ For example:
 | google/mt5-small | 1024 | 128 | True | 3e-4 | 64 | 50 |
 
 ### Validation
-| Strategies | Rougr-1 | Rougr-2 | Rougr-l |
+| Strategies | Rouge-1 | Rouge-2 | Rouge-l |
 | :---: | :---: | :---: | :---: |
-| 1 | 1 | 0.967 | 0.967 |
+| beams=4 | 28.2 | 11.1 | 24.9 |
 
 ### Evaluation
 ```
