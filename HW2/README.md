@@ -53,5 +53,5 @@ optional arguments:
 ```
 For example:
 ```
-  python eval.py -r public.jsonl -s output.jsonl
+  python eval.py -r ./data/public.jsonl -s ./data/output.jsonl
 ```
