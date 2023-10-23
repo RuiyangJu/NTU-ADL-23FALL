@@ -13,17 +13,21 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 
 ## Run
 ```
-bash run.sh /path/to/context.json /path/to/test.json /path/to/pred/prediction.csv
+bash run.sh /path/to/train.jsonl /path/to/public.jsonl /path/to/output
 ```
 For example:
 ```
-bash run.sh ./data/context.json ./data/test.json ./data/output/prediction.csv
+bash run.sh ./data/train.jsonl ./data/public.jsonl ./model
 ```
 
 ## Chinese News Summarization (Title Generation)
 ### Train
 ```
-  bash train_mc.sh
+bash train.sh /path/to/train.jsonl /path/to/public.jsonl /path/to/output
+```
+For example:
+```
+bash train.sh ./data/train.jsonl ./data/public.jsonl ./model
 ```
 
 #### Hyperparameters:
@@ -36,38 +40,3 @@ bash run.sh ./data/context.json ./data/test.json ./data/output/prediction.csv
 | :---: | :---: | :---: |
 | hfl/chinese-macbert-large | 1 | 0.967 |
 | hfl/chinese-macbert-large | 2 | 0.964 |
-
-### Test
-```
-  bash test_mc.sh
-```
-
-## Span Selection (question answering)
-### Train
-```
-  bash train_qa.sh
-```
-
-#### Hyperparameters:
-| model | max_len | batch_size | gradient_accmulation_steps | learning_rate | num_epochs |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| hfl/chinese-lert-large | 512 | 4 | 16 | 3e-5 | 10 |
-
-### Validation
-| model | num_epoch | exact_match | train_loss |
-| :---: | :---: | :---: | :---: |
-| hfl/chinese-lert-large | 1 | 83.616 | 0.980 |
-| hfl/chinese-lert-large | 2 | 83.383 | 0.514 |
-| hfl/chinese-lert-large | 3 | 84.280 | 0.368 |
-| hfl/chinese-lert-large | 4 | 84.513 | 0.301 |
-| hfl/chinese-lert-large | 5 | 83.981 | 0.277 |
-| hfl/chinese-lert-large | 6 | 84.114 | 0.242 |
-| hfl/chinese-lert-large | 7 | 83.716 | 0.119 |
-| hfl/chinese-lert-large | 8 | 84.546 | 0.084 |
-| hfl/chinese-lert-large | 9 | 84.513 | 0.082 |
-| hfl/chinese-lert-large | 10 | 83.948 | 0.072 |
-
-### Test
-```
-  bash test_qa.sh
-```
