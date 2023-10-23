@@ -6,6 +6,7 @@ python run_summarization.py \
   --model_name_or_path ./model \
   --test_file $1\
   --output_file $2 \
+  --output_dir ./model
   --predict_with_generate \
   --text_column maintext \
   --summary_column title \
