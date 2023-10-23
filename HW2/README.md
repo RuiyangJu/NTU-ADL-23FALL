@@ -50,3 +50,7 @@ optional arguments:
   -r REFERENCE, --reference REFERENCE
   -s SUBMISSION, --submission SUBMISSION
 ```
+For example:
+```
+  python eval.py -r public.jsonl -s submission.jsonl
+```
