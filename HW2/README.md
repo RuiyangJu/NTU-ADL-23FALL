@@ -36,10 +36,9 @@ For example:
 | google/mt5-small | 1024 | 128 | True | 3e-4 | 64 | 50 |
 
 ### Validation
-| model | num_epoch | accuracy |
-| :---: | :---: | :---: |
-| hfl/chinese-macbert-large | 1 | 0.967 |
-| hfl/chinese-macbert-large | 2 | 0.964 |
+| Stratgies | Rougr-1 | Rougr-2 | Rougr-l |
+| :---: | :---: | :---: | :---: |
+| 1 | 1 | 0.967 | 0.967 |
 
 ### Evaluation
 ```
