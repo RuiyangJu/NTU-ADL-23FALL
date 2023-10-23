@@ -4,12 +4,6 @@
   pip install -r requirements.txt
   pip install -e tw_rouge
 ```
-If there are still some packages that have not been installed successfully, you need to install them manually. Examples are as follows:
-```
-  pip install datasets
-  pip install evaluate
-  pip install accelerate
-```
 
 ## Download
 Use gdown to download trained models, tokenizers and data from Google Drive:
