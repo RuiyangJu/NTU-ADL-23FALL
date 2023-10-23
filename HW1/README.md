@@ -18,11 +18,11 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 
 ## Run
 ```
-bash run.sh /path/to/context.json /path/to/test.json /path/to/pred/prediction.csv
+  bash run.sh /path/to/context.json /path/to/test.json /path/to/pred/prediction.csv
 ```
 For example:
 ```
-bash run.sh ./data/context.json ./data/test.json ./data/output/prediction.csv
+  bash run.sh ./data/context.json ./data/test.json ./data/output/prediction.csv
 ```
 
 ## Paragraph Selection (multiple choice)
