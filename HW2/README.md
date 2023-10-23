@@ -36,7 +36,7 @@ For example:
 | google/mt5-small | 1024 | 128 | True | 3e-4 | 64 | 50 |
 
 ### Validation
-| Stratgies | Rougr-1 | Rougr-2 | Rougr-l |
+| Strategies | Rougr-1 | Rougr-2 | Rougr-l |
 | :---: | :---: | :---: | :---: |
 | 1 | 1 | 0.967 | 0.967 |
 
