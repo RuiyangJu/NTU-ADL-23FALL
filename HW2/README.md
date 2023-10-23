@@ -40,3 +40,13 @@ For example:
 | :---: | :---: | :---: |
 | hfl/chinese-macbert-large | 1 | 0.967 |
 | hfl/chinese-macbert-large | 2 | 0.964 |
+
+### Evaluation
+```
+usage: eval.py [-h] [-r REFERENCE] [-s SUBMISSION]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REFERENCE, --reference REFERENCE
+  -s SUBMISSION, --submission SUBMISSION
+```
