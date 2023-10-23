@@ -31,9 +31,9 @@ bash train.sh ./data/train.jsonl ./data/public.jsonl ./model
 ```
 
 #### Hyperparameters:
-| model | max_len | batch_size | gradient_accmulation_steps | learning_rate | num_epochs |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| hfl/chinese-macbert-large | 512 | 4 | 16 | 3e-5 | 2 |
+| model | max_source_len | max_target_len | pad_to_max_len | learning_rate | batch_size | num_epochs |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| google/mt5-small | 1024 | 128 | True | 3e-4 | 64 | 50 |
 
 ### Validation
 | model | num_epoch | accuracy |
