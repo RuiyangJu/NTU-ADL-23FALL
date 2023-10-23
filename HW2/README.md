@@ -38,7 +38,8 @@ For example:
 ### Validation
 | Strategies | Rouge-1 | Rouge-2 | Rouge-l |
 | :---: | :---: | :---: | :---: |
-| beams=4 | 28.2 | 11.1 | 24.9 |
+| beams=4 | 28.17 | 11.07 | 24.86 |
+| beams=16 | 28.25 | 11.14 | 24.92 |
 
 ### Evaluation
 ```
