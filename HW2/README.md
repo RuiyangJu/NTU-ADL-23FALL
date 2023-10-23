@@ -52,5 +52,5 @@ optional arguments:
 ```
 For example:
 ```
-  python eval.py -r public.jsonl -s submission.jsonl
+  python eval.py -r public.jsonl -s output.jsonl
 ```
