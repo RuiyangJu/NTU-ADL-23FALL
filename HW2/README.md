@@ -17,7 +17,7 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 ```
 For example:
 ```
-  bash run.sh ./data/train.jsonl ./data/public.jsonl ./model
+  bash run.sh ./data/public.jsonl ./data/output.jsonl
 ```
 
 ## Chinese News Summarization (Title Generation)
