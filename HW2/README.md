@@ -31,9 +31,9 @@ For example:
 ```
 
 #### Hyperparameters:
-| model | max_source_len | max_target_len | pad_to_max_len | learning_rate | batch_size | num_epochs |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| google/mt5-small | 1024 | 128 | True | 3e-4 | 64 | 50 |
+| model | max_source_len | max_target_len | pad_to_max_len | learning_rate | Optimizer | batch_size | num_epochs |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| google/mt5-small | 1024 | 128 | True | 3e-4 | AdaFactor | 64 | 50 |
 
 ### Validation
 | Strategies | Rouge-1 | Rouge-2 | Rouge-l |
