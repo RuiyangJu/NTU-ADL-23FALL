@@ -20,7 +20,7 @@ For example:
 bash run.sh ./data/context.json ./data/test.json ./data/output/prediction.csv
 ```
 
-## Paragraph Selection (multiple choice)
+## Chinese News Summarization (Title Generation)
 ### Train
 ```
   bash train_mc.sh
