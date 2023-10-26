@@ -20,30 +20,7 @@ For example:
   bash run.sh ./data/public.jsonl ./data/output.jsonl
 ```
 
-## Chinese News Summarization (Title Generation)
-### Train
-```
-  bash train.sh /path/to/train.jsonl /path/to/public.jsonl /path/to/output
-```
-For example:
-```
-  bash train.sh ./data/train.jsonl ./data/public.jsonl ./model
-```
-
-#### Hyperparameters:
-| model | max_source_len | max_target_len | pad_to_max_len | learning_rate | Optimizer | batch_size | num_epochs |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| google/mt5-small | 1024 | 128 | True | 3e-4 | AdaFactor | 64 | 50 |
-
-### Validation
-| Strategies | Rouge-1 | Rouge-2 | Rouge-l |
-| :---: | :---: | :---: | :---: |
-| beams=4 | 28.17 | 11.07 | 24.86 |
-| beams=16 | 28.25 | 11.14 | 24.92 |
-| Top-k=10 | 25.04 | 8.72 | 21.87 |
-| Top-p=0.9 | 23.93 | 8.27 | 20.98 |
-
-### Evaluation
+## Evaluation
 ```
 usage: eval.py [-h] [-r REFERENCE] [-s SUBMISSION]
 
@@ -76,3 +53,26 @@ Output:
   }
 }
 ```
+
+## Chinese News Summarization (Title Generation)
+### Train
+```
+  bash train.sh /path/to/train.jsonl /path/to/public.jsonl /path/to/output
+```
+For example:
+```
+  bash train.sh ./data/train.jsonl ./data/public.jsonl ./model
+```
+
+#### Hyperparameters:
+| model | max_source_len | max_target_len | pad_to_max_len | learning_rate | Optimizer | batch_size | num_epochs |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| google/mt5-small | 1024 | 128 | True | 3e-4 | AdaFactor | 64 | 50 |
+
+### Validation
+| Strategies | Rouge-1 | Rouge-2 | Rouge-l |
+| :---: | :---: | :---: | :---: |
+| beams=4 | 28.17 | 11.07 | 24.86 |
+| beams=16 | 28.25 | 11.14 | 24.92 |
+| Top-k=10 | 25.04 | 8.72 | 21.87 |
+| Top-p=0.9 | 23.93 | 8.27 | 20.98 |
