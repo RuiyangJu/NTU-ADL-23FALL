@@ -17,7 +17,7 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 ```
 For example:
 ```
-  bash run.sh ./data/public.jsonl ./data/output.jsonl
+  bash run.sh ./data/public.jsonl ./data/submission.jsonl
 ```
 
 ## Evaluation
@@ -31,7 +31,7 @@ optional arguments:
 ```
 For example:
 ```
-  python eval.py -r ./data/public.jsonl -s ./data/output.jsonl
+  python eval.py -r ./data/public.jsonl -s ./data/submission.jsonl
 ```
 Output:
 ```
