@@ -1,5 +1,5 @@
 # ${1}: path to public.jsonl. (./data/public.jsonl)
-# ${2}: path to output.jsonl. (./data/output.jsonl)
+# ${2}: path to output.jsonl. (./data/submission.jsonl)
 
 python run_summarization.py \
   --do_predict \
