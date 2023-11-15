@@ -51,8 +51,8 @@ For public_test.json, we run [public_process.py](public_process.py) to process t
   ...
 ]
 ```
-### Pricate Test Data
-
+### Private Test Data
+For private_test.json, we run [private_process.py](private_process.py) to process the data format as follows:
 
 ## Download
 Use gdown to download trained models, tokenizers and data from Google Drive:
