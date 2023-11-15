@@ -4,12 +4,12 @@
 * Paragraph Selection
 * Span Selection
 
+### Kaggle:
+https://www.kaggle.com/competitions/ntuadl2023hw1
+
 ### Deadline:
 * Kaggle leaderboard - 10/20 (Fri.) 23:59
 * Code and report (submit to NTU COOL) - 10/22 (Sun.) 23:59
-
-### Kaggle:
-https://www.kaggle.com/competitions/ntuadl2023hw1
 
 ## HW2
 ### Task Description:
