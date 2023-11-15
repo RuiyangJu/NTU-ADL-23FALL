@@ -81,26 +81,6 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
   bash download.sh
 ```
 
-## Run
-```
-  bash run.sh /path/to/input.jsonl /path/to/output.jsonl
-```
-For example:
-```
-  bash run.sh ./data/public.jsonl ./data/submission.jsonl
-```
-
-## Evaluation
-Model Performance on public_test.json:
-```
-  python ppl.py --base_model_path Taiwan-LLM-7B-v2.0-chat --peft_path model --test_data_path data/public_test.json
-```
-Output:
-```
-  Mean perplexity: 3.712290671825409
-```
-
-## Chinese News Summarization (Title Generation)
 ### Train
 ```
   bash train.sh /path/to/train.jsonl /path/to/public.jsonl /path/to/output
@@ -115,11 +95,21 @@ For example:
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | google/mt5-small | 1024 | 128 | True | 3e-4 | AdaFactor | 64 | 50 |
 
-### Validation
-| Strategies | Rouge-1 | Rouge-2 | Rouge-l |
-| :---: | :---: | :---: | :---: |
-| beams=4 | 25.77 | 10.00 | 22.92 |
-| beams=16 | 25.86 | 10.05 | 22.96 |
-| Top-k=10 | 22.71 | 7.90 | 20.07 |
-| Top-p=0.9 | 21.63 | 7.49 | 19.18 |
+## Evaluation
+Model Performance on public_test.json:
+```
+  python ppl.py --base_model_path Taiwan-LLM-7B-v2.0-chat --peft_path model --test_data_path data/public_test.json
+```
+Output:
+```
+  Mean perplexity: 3.712290671825409
+```
 
+## Run
+```
+  bash run.sh /path/to/input.jsonl /path/to/output.jsonl
+```
+For example:
+```
+  bash run.sh ./data/public.jsonl ./data/submission.jsonl
+```
