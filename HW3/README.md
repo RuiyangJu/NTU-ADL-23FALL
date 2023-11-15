@@ -5,7 +5,18 @@
 ```
 
 ## Data Processing
-
+### Training Data
+The provided train.json format is as follows:
+```
+[
+  {
+    "id": "db63fb72-e211-4596-94a4-69617706f7ef",
+    "instruction": "翻譯成文言文：\n雅裏惱怒地說： 從前在福山田獵時，你誣陷獵官，現在又說這種話。\n答案：",
+    "output": "雅裏怒曰： 昔畋於福山，卿誣獵官，今復有此言。"
+  },
+  ...
+]
+```
 
 
 
