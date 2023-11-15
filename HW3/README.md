@@ -40,7 +40,7 @@ We run [train_process.py](train_process.py) to process the data as follows:
 ]
 ```
 ### Testing Data
-
+For public_test.json, we run [public_process.py](public_process.py) to process the data format as follows:
 
 
 
