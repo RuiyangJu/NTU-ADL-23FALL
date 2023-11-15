@@ -41,7 +41,16 @@ We run [train_process.py](train_process.py) to process the data as follows:
 ```
 ### Testing Data
 For public_test.json, we run [public_process.py](public_process.py) to process the data format as follows:
-
+```
+[
+  {
+    "instruction": "翻譯成文言文：\n於是，廢帝讓瀋慶之的堂侄、直將軍瀋攸之賜瀋慶之毒藥，命瀋慶之自殺。",
+    "input": "",
+    "output": "帝乃使慶之從父兄子直閣將軍攸之賜慶之藥。"
+  },
+  ...
+]
+```
 
 
 ## Download
