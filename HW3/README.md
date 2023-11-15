@@ -91,13 +91,13 @@ For example:
 ```
 
 #### Hyperparameters:
-| Quantization_Bit | FlashAttention-2 | Max_Tokens | Learning_Rate | Max_Samples | batch_size | num_epochs |
+| Quantization_Bit | FlashAttention-2 | Max_Tokens | Learning_Rate | Max_Samples | batch_size | Num_Epochs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 4 | True | 1024 | 1e-5 | 10000 | 64 | 10 |
 
-| Quantization_Bit | FlashAttention-2 | Max_Tokens | Learning_Rate | Max_Samples | batch_size | num_epochs |
+| Compute_Type | Learning_Rate_Scheduler | Lora_Rank | Lora_Dropout | Lora_Target | Batch_size | Gradient_Accumulation |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 4 | True | 1024 | 1e-5 | 10000 | 64 | 10 |
+| bf16 | cosine | 8 | 0.1 | q_proj,v_proj | 4 | 16 |
 
 ## Evaluation
 Model Performance on public_test.json:
