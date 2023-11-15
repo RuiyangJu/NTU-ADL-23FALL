@@ -29,10 +29,16 @@ To conform to the format of the [alpaca_zh](https://huggingface.co/datasets/shib
 ]
 ```
 We run [train_process.py](train_process.py) to process the data as follows:
-
-
-
-
+```
+[
+  {
+    "instruction": "翻譯成文言文：\n雅裏惱怒地說： 從前在福山田獵時，你誣陷獵官，現在又說這種話。\n答案：",
+    "input": "",
+    "output": ""
+  },
+  ...
+]
+```
 
 
 
