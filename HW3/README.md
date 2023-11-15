@@ -53,6 +53,24 @@ For public_test.json, we run [public_process.py](public_process.py) to process t
 ```
 ### Private Test Data
 For private_test.json, we run [private_process.py](private_process.py) to process the data format as follows:
+```
+[
+  {
+    "instruction": "穿右穴而進，其下甚削，陷峽頗深，即下穿所入之峽也，以壁削路阻，不得達。\n幫我把這句話翻譯成現代文",
+    "input": "",
+    "output": ""
+  },
+  ...
+]
+```
+
+
+
+
+
+
+
+
 
 ## Download
 Use gdown to download trained models, tokenizers and data from Google Drive:
