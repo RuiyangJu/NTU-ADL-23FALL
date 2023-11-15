@@ -64,7 +64,7 @@ For private_test.json, we run [private_process.py](private_process.py) to proces
 ]
 ```
 ### Prediction Data
-
+In order to conform to the requirement for prediction in the Homework (DO NOT include any special tokens (<s>, </s>, …) and your prompt in your output), we run [result_process.py](result_process.py) to process the data format as follows:
 
 
 
