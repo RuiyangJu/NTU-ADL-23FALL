@@ -91,12 +91,9 @@ For example:
 ```
 
 ## Evaluation
+Model Performance on public_test.json:
 ```
-usage: eval.py [-h] [-r REFERENCE] [-s SUBMISSION]
-```
-For example:
-```
-  python eval.py -r ./data/public.jsonl -s ./data/submission.jsonl
+  python ppl.py --base_model_path  --peft_path model Taiwan-LLM-7B-v2.0-chat --test_data_path data/public_test.json
 ```
 Output:
 ```
