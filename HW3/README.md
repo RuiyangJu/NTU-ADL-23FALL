@@ -91,9 +91,9 @@ For example:
 ```
 
 #### Hyperparameters:
-| model | max_source_len | max_target_len | pad_to_max_len | learning_rate | Optimizer | batch_size | num_epochs |
+| Quantization_Bit | FlashAttention-2 | Max_Tokens | Learning_Rate | Max_Samples | batch_size | num_epochs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| google/mt5-small | 1024 | 128 | True | 3e-4 | AdaFactor | 64 | 50 |
+| 4 | True | 1024 | 1e-5 | 10000 | 64 | 10 |
 
 ## Evaluation
 Model Performance on public_test.json:
