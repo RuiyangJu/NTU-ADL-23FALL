@@ -34,7 +34,7 @@ We run [train_process.py](train_process.py) to process the data as follows:
   {
     "instruction": "翻譯成文言文：\n雅裏惱怒地說： 從前在福山田獵時，你誣陷獵官，現在又說這種話。\n答案：",
     "input": "",
-    "output": ""
+    "output": "雅裏怒曰： 昔畋於福山，卿誣獵官，今復有此言。"
   },
   ...
 ]
