@@ -97,7 +97,7 @@ For example:
 
 | Compute_Type | Learning_Rate_Scheduler | Lora_Rank | Lora_Dropout | Lora_Target | Batch_size | Gradient_Accumulation |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| bf16 | cosine | 8 | 0.1 | q_proj,v_proj | 4 | 16 |
+| bf16 | cosine | 8 | 0.1 | q_proj, v_proj | 4 | 16 |
 
 ## Evaluation
 Model Performance on public_test.json:
