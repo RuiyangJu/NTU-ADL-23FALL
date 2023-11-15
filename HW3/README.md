@@ -91,9 +91,9 @@ For example:
 ```
 
 #### Hyperparameters:
-| Quantization_Bit | FlashAttention-2 | Max_Tokens | Learning_Rate | Max_Samples | batch_size | Num_Epochs |
+| Quantization_Bit | FlashAttention-2 | Max_Tokens | Learning_Rate | Max_Samples | Maximum_Gradient_Norm | Num_Epochs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 4 | True | 1024 | 1e-5 | 10000 | 64 | 10 |
+| 4 | True | 1024 | 1e-5 | 10000 | 1.0 | 10 |
 
 | Compute_Type | Learning_Rate_Scheduler | Lora_Rank | Lora_Dropout | Lora_Target | Batch_size | Gradient_Accumulation |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
