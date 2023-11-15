@@ -22,5 +22,8 @@ https://www.kaggle.com/competitions/ntuadl2023hw1
 ### Task Description:
 * Instruction Tuning (Classical Chinese)
 
-## Deadline:
+### Taiwan-LLaMa
+* https://github.com/MiuLab/Taiwan-LLaMa
+
+### Deadline:
 * Code and report (submit to NTU COOL) - 11/29 (Wed.) 23:59
