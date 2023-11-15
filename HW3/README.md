@@ -75,12 +75,6 @@ In order to conform to the requirement for prediction in the Homework (DO NOT in
 ]
 ```
 
-
-
-
-
-
-
 ## Download
 Use gdown to download trained models, tokenizers and data from Google Drive:
 ```
@@ -99,11 +93,6 @@ For example:
 ## Evaluation
 ```
 usage: eval.py [-h] [-r REFERENCE] [-s SUBMISSION]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -r REFERENCE, --reference REFERENCE
-  -s SUBMISSION, --submission SUBMISSION
 ```
 For example:
 ```
@@ -111,23 +100,7 @@ For example:
 ```
 Output:
 ```
-{
-  "rouge-1": {
-    "r": 0.2514407046285254,
-    "p": 0.2815113516763089,
-    "f": 0.2585712911257173
-  },
-  "rouge-2": {
-    "r": 0.09881004830495194,
-    "p": 0.10841936828246301,
-    "f": 0.10052484246314036
-  },
-  "rouge-l": {
-    "r": 0.2234307264405613,
-    "p": 0.24996033587187794,
-    "f": 0.22957756251039388
-  }
-}
+  Mean perplexity: 3.712290671825409
 ```
 
 ## Chinese News Summarization (Title Generation)
