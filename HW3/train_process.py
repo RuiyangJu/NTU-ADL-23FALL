@@ -7,7 +7,6 @@ for key in data:
     if key["id"]:
         del key["id"]
     key["input"] = ""
-    key["output"] = ""
 print(data)
 
 with open('processed_data/processed_train.json', 'w', encoding='utf-8') as f:
