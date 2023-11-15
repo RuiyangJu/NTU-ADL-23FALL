@@ -17,7 +17,17 @@ The provided train.json format is as follows:
   ...
 ]
 ```
-To conform to the format of the alpaca_zh dataset, which is as follows:
+To conform to the format of the alpaca_zh dataset, as follows:
+```
+[
+  {
+    "instruction": "保持健康的三个提示。",
+    "input": "",
+    "output": "以下是保持健康的三个提示：\n\n1. 保持身体活动。每天做适当的身体运动，如散步、跑步或游泳，能促进心血管健康，增强肌肉力量，并有助于减少体重。\n\n2. 均衡饮食。每天食用新鲜的蔬菜、水果、全谷物和脂肪含量低的蛋白质食物，避免高糖、高脂肪和加工食品，以保持健康的饮食习惯。\n\n3. 睡眠充足。睡眠对人体健康至关重要，成年人每天应保证 7-8 小时的睡眠。良好的睡眠有助于减轻压力，促进身体恢复，并提高注意力和记忆力。"
+  },
+  ...
+]
+```
 
 
 
