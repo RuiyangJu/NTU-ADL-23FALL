@@ -65,7 +65,15 @@ For private_test.json, we run [private_process.py](private_process.py) to proces
 ```
 ### Prediction Data
 In order to conform to the requirement for prediction in the Homework (DO NOT include any special tokens (<s>, </s>, …) and your prompt in your output), we run [result_process.py](result_process.py) to process the data format as follows:
-
+```
+[
+  {
+    "id": "d573ddd1-7bb9-468d-b906-e392223d9579",
+    "output": "穿過右穴之後，下去竟然很深，下峽頗深，就是下穿進去之峽，邊壁崩塌，阻止不通。"
+  },
+  ...
+]
+```
 
 
 
