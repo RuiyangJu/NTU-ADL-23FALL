@@ -29,5 +29,5 @@ with open('data/output.json', 'w', encoding='utf-8') as f:
 for i in range(len(data_test)):
     data_test[i].update(data_generated[i])
     data_result = json.dumps(data_test, indent=2, separators=(',', ': '), ensure_ascii = False)
-with open('processed_data/prediction.json', 'w', encoding = 'utf-8') as f:
+with open('prediction.json', 'w', encoding = 'utf-8') as f:
     f.write(data_result)
