@@ -17,7 +17,7 @@ The provided train.json format is as follows:
   ...
 ]
 ```
-
+To conform to the format of the alpaca_zh dataset, which is as follows:
 
 
 
