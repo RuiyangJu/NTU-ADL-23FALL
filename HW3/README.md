@@ -5,7 +5,7 @@
 ```
 
 ## Data Processing
-### Training Data
+### Train Data
 The provided train.json format is as follows:
 ```
 [
@@ -39,7 +39,7 @@ We run [train_process.py](train_process.py) to process the data as follows:
   ...
 ]
 ```
-### Testing Data
+### Public Test Data
 For public_test.json, we run [public_process.py](public_process.py) to process the data format as follows:
 ```
 [
@@ -51,6 +51,7 @@ For public_test.json, we run [public_process.py](public_process.py) to process t
   ...
 ]
 ```
+### Pricate Test Data
 
 
 ## Download
