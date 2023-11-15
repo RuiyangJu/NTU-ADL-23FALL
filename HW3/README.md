@@ -94,6 +94,7 @@ For example:
 | Quantization_Bit | FlashAttention-2 | Max_Tokens | Learning_Rate | Max_Samples | batch_size | num_epochs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 4 | True | 1024 | 1e-5 | 10000 | 64 | 10 |
+
 | Quantization_Bit | FlashAttention-2 | Max_Tokens | Learning_Rate | Max_Samples | batch_size | num_epochs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 4 | True | 1024 | 1e-5 | 10000 | 64 | 10 |
