@@ -28,7 +28,7 @@ To conform to the format of the [alpaca_zh](https://huggingface.co/datasets/shib
   ...
 ]
 ```
-We run [process_train.py](HW3/train_process.py) to process the data as follows:
+We run [train_process.py](train_process.py) to process the data as follows:
 
 
 
