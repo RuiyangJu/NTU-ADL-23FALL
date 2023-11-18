@@ -27,5 +27,5 @@ python tune.py \
     --lora_dropout 0.1 \
     --lora_target q_proj,v_proj \
     --resume_lora_training True \
-    --output_dir saved \
+    --output_dir model \
     --bf16 True
