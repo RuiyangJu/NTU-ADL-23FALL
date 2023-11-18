@@ -86,11 +86,7 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 
 ### Train
 ```
-  bash train.sh /path/to/train.jsonl /path/to/public.jsonl /path/to/output
-```
-For example:
-```
-  bash train.sh ./data/train.jsonl ./data/public.jsonl ./model
+  bash train.sh
 ```
 
 #### Hyperparameters:
