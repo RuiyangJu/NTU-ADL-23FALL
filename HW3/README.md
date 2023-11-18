@@ -3,7 +3,10 @@
 ```
   pip install -r requirements.txt
 ```
-
+If you want to enable the quantized LoRA (QLoRA) on the Windows platform, you will be required to install a pre-built version of bitsandbytes library, which supports CUDA 11.1 to 12.1.
+```
+  pip install https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.39.1-py3-none-win_amd64.whl
+```
 ## Data Processing
 ### Train Data
 The provided train.json format is as follows:
