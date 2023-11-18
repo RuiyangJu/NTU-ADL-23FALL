@@ -10,5 +10,5 @@ for key in data:
     key["output"] = ""
 print(data)
 
-with open('processed_data/processed_private.json', 'w', encoding='utf-8') as f:
+with open('data/processed_private.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
