@@ -84,7 +84,7 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
   bash download.sh
 ```
 
-### Train
+## Train
 ```
   bash train.sh
 ```
