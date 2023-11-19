@@ -1,0 +1,14 @@
+{
+  "train": {
+    "file_name": "processed_train.json"
+  },
+  "public": {
+    "file_name": "processed_public.json"
+  },
+  "private": {
+    "file_name": "processed_private.json"
+  },
+  "predict": {
+    "file_name": "processed_input.json"
+  }
+}
