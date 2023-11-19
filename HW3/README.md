@@ -111,7 +111,7 @@ Output:
 ## Run
 Before `bash run.sh`, you need to put `Taiwan-LLM-7B-v2.0-chat` into the `./model` folder.
 ```
-  bash run.sh /path/to/input.jsonl /path/to/output.jsonl
+  bash run.sh /path/to/model-folder /path/to/input.josn /path/to/output.json
 ```
 For example:
 ```
