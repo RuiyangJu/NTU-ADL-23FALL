@@ -115,5 +115,5 @@ Before `bash run.sh`, you need to put `Taiwan-LLM-7B-v2.0-chat` into the `./mode
 ```
 For example:
 ```
-  bash run.sh ./data/public.jsonl ./data/submission.jsonl
+  bash run.sh ./model /path/to/input.josn /path/to/output.json
 ```
