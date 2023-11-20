@@ -1,6 +1,6 @@
 python src/train_bash.py \
     --stage sft \
-    --model_name_or_path Taiwan-LLM-7B-v2.0-chat \
+    --model_name_or_path model/Taiwan-LLM-7B-v2.0-chat \
     --do_train True \
     --finetuning_type lora \
     --quantization_bit 4 \
