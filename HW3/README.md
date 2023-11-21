@@ -85,9 +85,13 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 ```
 
 ## Train
-Before `bash train.sh`, you need to put `Taiwan-LLM-7B-v2.0-chat` into the `./model` folder.
 ```
-  bash train.sh
+  bash train.sh /path/to/Taiwan-LLaMa-folder
+```
+Before `bash train.sh`, you need to put `Taiwan-LLM-7B-v2.0-chat` into this folder.
+For example:
+```
+  bash train.sh ./
 ```
 
 #### Hyperparameters:
