@@ -1,14 +1,16 @@
-# ${1}: path to the folder containing the files downloaded by download.sh
-# ${2}: path to the input file (.json)
-# ${3}: path to the output file (.json)
+# ${1}: path to the Taiwan-LLaMa checkpoint folder
+# ${2}: path to the folder containing the peft model downloaded by download.sh
+# ${3}: path to the input file (.json)
+# ${4}: path to the output file (.json)
 
-python preprocess.py --input ${2}
+
+python preprocess.py --input ${3}
 
 python src/train_bash.py \
     --stage sft \
-    --model_name_or_path ${1}/Taiwan-LLM-7B-v2.0-chat \
+    --model_name_or_path ${1} \
     --predict_with_generate True \
-    --checkpoint_dir ${1}/checkpoint \
+    --checkpoint_dir ${2} \
     --finetuning_type lora \
     --template default \
     --flash_attn True \
@@ -24,4 +26,4 @@ python src/train_bash.py \
     --output_dir saved \
     --do_predict True
 
-python postprocess.py --original ${2} --generated saved/generated_predictions.jsonl --output ${3}
+python postprocess.py --original ${3} --generated saved/generated_predictions.jsonl --output ${4}
