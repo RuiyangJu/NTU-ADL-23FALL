@@ -116,9 +116,9 @@ Output:
 ## Run
 Before `bash run.sh`, you need to put `Taiwan-LLM-7B-v2.0-chat` into the `./model` folder.
 ```
-  bash run.sh /path/to/model-folder /path/to/input.josn /path/to/output.json
+  bash run.sh /path/to/Taiwan-LLaMa-folder /path/to/peft-folder /path/to/input.josn \ /path/to/output.json
 ```
 For example:
 ```
-  bash run.sh ./model ./data/private_test.json ./prediction.json
+  bash run.sh ./ ./model ./data/private_test.json ./prediction.json
 ```
