@@ -110,7 +110,7 @@ Model Performance on public_test.json:
 ```
 Output:
 ```
-  Mean perplexity: 3.712290671825409
+  Mean perplexity: 3.6350806303024292
 ```
 
 ## Run
