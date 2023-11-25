@@ -85,10 +85,10 @@ Use gdown to download trained models, tokenizers and data from Google Drive:
 ```
 
 ## Train
-Before `bash train.sh`, you need to put `Taiwan-LLM-7B-v2.0-chat` into this folder.
 ```
   bash train.sh /path/to/Taiwan-LLaMa-folder
 ```
+Before `bash train.sh`, you need to put `Taiwan-LLM-7B-v2.0-chat` into this folder.
 
 For example:
 ```
@@ -109,6 +109,7 @@ Model Performance on `public_test.json`:
 ```
   python ppl.py --base_model_path /path/to/Taiwan-Llama --peft_path /path/to/adapter_checkpoint --test_data_path /path/to/input/data
 ```
+For example:
 ```
   python ppl.py --base_model_path Taiwan-LLM-7B-v2.0-chat --peft_path adapter_checkpoint --test_data_path data/public_test.json
 ```
@@ -122,7 +123,8 @@ Output:
   bash run.sh /path/to/Taiwan-LLaMa-folder /path/to/peft-folder /path/to/input.josn /path/to/output.json
 ```
 Before `bash run.sh`, you need to put `Taiwan-LLM-7B-v2.0-chat` into this folder.
+
 For example:
 ```
-  bash run.sh ./Taiwan-LLM-7B-v2.0-chat ./model ./data/private_test.json ./prediction.json
+  bash run.sh ./Taiwan-LLM-7B-v2.0-chat ./adapter_checkpoint ./data/private_test.json ./prediction.json
 ```
