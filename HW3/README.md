@@ -31,7 +31,7 @@ To conform to the format of the [alpaca_zh](https://huggingface.co/datasets/shib
   ...
 ]
 ```
-We run [train_process.py](train_process.py) to process the data as follows:
+We run [train_process.py](data_process/train_process.py) to process the data as follows:
 ```
 [
   {
@@ -43,7 +43,7 @@ We run [train_process.py](train_process.py) to process the data as follows:
 ]
 ```
 ### Public Test Data
-For public_test.json, we run [public_process.py](public_process.py) to process the data format as follows:
+For public_test.json, we run [public_process.py](data_process/public_process.py) to process the data format as follows:
 ```
 [
   {
@@ -55,7 +55,7 @@ For public_test.json, we run [public_process.py](public_process.py) to process t
 ]
 ```
 ### Private Test Data
-For private_test.json, we run [private_process.py](private_process.py) to process the data format as follows:
+For private_test.json, we run [private_process.py](data_process/private_process.py) to process the data format as follows:
 ```
 [
   {
@@ -67,7 +67,7 @@ For private_test.json, we run [private_process.py](private_process.py) to proces
 ]
 ```
 ### Prediction Data
-In order to conform to the requirement for prediction in the Homework (DO NOT include any special tokens (<s>, </s>, …) and your prompt in your output), we run [result_process.py](result_process.py) to process the data format as follows:
+In order to conform to the requirement for prediction in the Homework (DO NOT include any special tokens (<s>, </s>, …) and your prompt in your output), we run [result_process.py](data_process/result_process.py) to process the data format as follows:
 ```
 [
   {
