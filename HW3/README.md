@@ -107,6 +107,9 @@ For example:
 ## Grading
 Model Performance on `public_test.json`:
 ```
+  python ppl.py --base_model_path /path/to/Taiwan-Llama --peft_path /path/to/adapter_checkpoint --test_data_path /path/to/input/data
+```
+```
   python ppl.py --base_model_path Taiwan-LLM-7B-v2.0-chat --peft_path adapter_checkpoint --test_data_path data/public_test.json
 ```
 Output:
