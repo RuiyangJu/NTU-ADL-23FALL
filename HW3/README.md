@@ -103,10 +103,10 @@ For example:
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | bf16 | cosine | 8 | 0.1 | q_proj, v_proj | 4 | 16 |
 
-## Evaluation
-Model Performance on public_test.json:
+## Grading
+Model Performance on `public_test.json`:
 ```
-  python ppl.py --base_model_path Taiwan-LLM-7B-v2.0-chat --peft_path model --test_data_path data/public_test.json
+  python ppl.py --base_model_path Taiwan-LLM-7B-v2.0-chat --peft_path adapter_checkpoint --test_data_path data/public_test.json
 ```
 Output:
 ```
