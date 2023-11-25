@@ -1,5 +1,5 @@
-mkdir ./model
+mkdir ./adapter_checkpoint
 
-gdown 1THat2vzdABH9It91oWXV62I2LfTPnRSY -O ./model/hw3_model.zip
+gdown 1THat2vzdABH9It91oWXV62I2LfTPnRSY -O ./adapter_checkpoint/hw3_model.zip
 
-unzip ./model/hw3_model.zip -d ./model
+unzip ./adapter_checkpoint/hw3_model.zip -d ./adapter_checkpoint
