@@ -9,6 +9,5 @@ python run_summarization.py \
   --output_dir ./model \
   --predict_with_generate \
   --text_column maintext \
-  --summary_column title \
   --per_device_eval_batch_size 4 \
   --num_beams 16 \
