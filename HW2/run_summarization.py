@@ -7,7 +7,6 @@ import jsonlines
 import datasets
 from datasets import load_dataset
 from dataclasses import dataclass, field
-from tw_rouge.twrouge import get_rouge
 from typing import Optional
 from filelock import FileLock
 import transformers
@@ -190,30 +189,9 @@ def main():
 
     label_pad_token_id = -100 if data_args.ignore_pad_token_for_loss else tokenizer.pad_token_id
     data_collator = DataCollatorForSeq2Seq(tokenizer, model=model, label_pad_token_id=label_pad_token_id, pad_to_multiple_of=8 if training_args.fp16 else None)
-    metric = get_rouge
-
-    def postprocess_text(preds, labels):
-        preds = [pred.strip() for pred in preds]
-        labels = [label.strip() for label in labels]
-        preds = ["\n".join(nltk.sent_tokenize(pred)) for pred in preds]
-        labels = ["\n".join(nltk.sent_tokenize(label)) for label in labels]
-        return preds, labels
-
-    def compute_metrics(eval_preds):
-        preds, labels = eval_preds
-        if isinstance(preds, tuple):
-            preds = preds[0]
-        decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
-        if data_args.ignore_pad_token_for_loss:
-            labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
-        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
-        decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
-        result = metric(preds=decoded_preds, refs=decoded_labels)
-        result = {f"{k1}_{k2}": v2  for k1, v1 in result.items() for k2, v2 in v1.items()}
-        return result
 
     gen_kwargs = {"do_sample": data_args.do_sample, "top_k": data_args.top_k, "top_p": data_args.top_p, "temperature": data_args.temperature}
-    trainer = Seq2SeqTrainer(model=model, args=training_args, train_dataset=train_dataset if training_args.do_train else None,eval_dataset=eval_dataset if training_args.do_eval else None, tokenizer=tokenizer, data_collator=data_collator, compute_metrics=compute_metrics if training_args.predict_with_generate else None)
+    trainer = Seq2SeqTrainer(model=model, args=training_args, train_dataset=train_dataset if training_args.do_train else None,eval_dataset=eval_dataset if training_args.do_eval else None, tokenizer=tokenizer, data_collator=data_collator, compute_metrics=None)
     
     if training_args.do_train:
         checkpoint = None
