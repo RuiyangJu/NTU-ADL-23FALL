@@ -7,7 +7,7 @@ import jsonlines
 import datasets
 from datasets import load_dataset
 from dataclasses import dataclass, field
-from tw_rouge import get_rouge
+from tw_rouge.twrouge import get_rouge
 from typing import Optional
 from filelock import FileLock
 import transformers
