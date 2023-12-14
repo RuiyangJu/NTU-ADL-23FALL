@@ -1,10 +1,7 @@
-# Inspired by: https://github.com/hendrycks/test/blob/master/evaluate_flan.py
-
 import os
 import json
 import torch
 import inspect
-import tiktoken
 import numpy as np
 from tqdm import tqdm, trange
 from typing import Any, Dict, List, Optional
@@ -30,7 +27,7 @@ class Evaluator:
         self.choice_inputs = self._encode_choices()
 
     def _encode_choices(self) -> List[int]:
-        if isinstance(getattr(self.tokenizer, "tokenizer", None), tiktoken.Encoding): # for tiktoken tokenizer (Qwen)
+        if isinstance(getattr(self.tokenizer, "tokenizer", None)): 
             kwargs = dict(allowed_special="all")
         else:
             kwargs = dict(add_special_tokens=False)
