@@ -1,4 +1,3 @@
-import tiktoken
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, Dict, List, Optional, Tuple, Union
 
@@ -130,7 +129,7 @@ class Template:
         r"""
         Converts context to token ids.
         """
-        if isinstance(getattr(tokenizer, "tokenizer", None), tiktoken.Encoding): # for tiktoken tokenizer (Qwen)
+        if isinstance(getattr(tokenizer, "tokenizer", None)):
             kwargs = dict(allowed_special="all")
         else:
             kwargs = dict(add_special_tokens=False)
