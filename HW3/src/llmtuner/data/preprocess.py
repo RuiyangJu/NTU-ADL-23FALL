@@ -48,10 +48,8 @@ def preprocess_dataset(
 
     def preprocess_pretrain_dataset(examples: Dict[str, List[Any]]) -> Dict[str, List[List[int]]]:
         # build grouped texts with format `X1 X2 X3 ...`
-        if isinstance(getattr(tokenizer, "tokenizer", None)):
-            kwargs = dict(allowed_special="all")
-        else:
-            kwargs = dict(add_special_tokens=True)
+        kwargs = dict(allowed_special="all")
+        #kwargs = dict(add_special_tokens=True)
 
         if hasattr(tokenizer, "add_eos_token"): # for LLaMA tokenizer
             add_eos_token_flag = getattr(tokenizer, "add_eos_token")
