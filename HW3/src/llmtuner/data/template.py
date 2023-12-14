@@ -130,8 +130,8 @@ class Template:
         Converts context to token ids.
         """
         kwargs = dict(allowed_special="all")
-        #kwargs = dict(add_special_tokens=False)
-
+        kwargs = dict(add_special_tokens=False)
+        
         token_ids = []
         for elem in context:
             if isinstance(elem, str):
