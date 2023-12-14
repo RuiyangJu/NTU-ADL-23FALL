@@ -9,7 +9,7 @@ numpy==1.23.5
 scipy
 sentencepiece
 protobuf
-tiktoken
+tiktoken==0.5.2
 jieba
 rouge-chinese
 nltk
