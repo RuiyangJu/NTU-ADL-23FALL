@@ -129,10 +129,8 @@ class Template:
         r"""
         Converts context to token ids.
         """
-        if isinstance(getattr(tokenizer, "tokenizer", None)):
-            kwargs = dict(allowed_special="all")
-        else:
-            kwargs = dict(add_special_tokens=False)
+        kwargs = dict(allowed_special="all")
+        #kwargs = dict(add_special_tokens=False)
 
         token_ids = []
         for elem in context:
