@@ -27,11 +27,8 @@ class Evaluator:
         self.choice_inputs = self._encode_choices()
 
     def _encode_choices(self) -> List[int]:
-        
-        if isinstance(getattr(self.tokenizer, "tokenizer", None)): 
-            kwargs = dict(allowed_special="all")
-        else:
-            kwargs = dict(add_special_tokens=False)
+        kwargs = dict(allowed_special="all")
+        kwargs = dict(add_special_tokens=False)
 
         return [self.tokenizer.encode(self.eval_template.prefix + ch, **kwargs)[-1] for ch in CHOICES]
 
