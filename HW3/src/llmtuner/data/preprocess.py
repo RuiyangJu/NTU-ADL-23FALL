@@ -1,5 +1,4 @@
 import os
-import tiktoken
 from itertools import chain
 from typing import TYPE_CHECKING, Any, Dict, Generator, List, Literal, Tuple, Union
 
@@ -49,7 +48,7 @@ def preprocess_dataset(
 
     def preprocess_pretrain_dataset(examples: Dict[str, List[Any]]) -> Dict[str, List[List[int]]]:
         # build grouped texts with format `X1 X2 X3 ...`
-        if isinstance(getattr(tokenizer, "tokenizer", None), tiktoken.Encoding): # for tiktoken tokenizer (Qwen)
+        if isinstance(getattr(tokenizer, "tokenizer", None)):
             kwargs = dict(allowed_special="all")
         else:
             kwargs = dict(add_special_tokens=True)
