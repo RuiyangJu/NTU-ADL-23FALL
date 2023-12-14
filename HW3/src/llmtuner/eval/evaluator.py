@@ -28,8 +28,10 @@ class Evaluator:
 
     def _encode_choices(self) -> List[int]:
         
-        kwargs = dict(allowed_special="all")
-        #kwargs = dict(add_special_tokens=False)
+        if isinstance(getattr(self.tokenizer, "tokenizer", None)): 
+            kwargs = dict(allowed_special="all")
+        else:
+            kwargs = dict(add_special_tokens=False)
 
         return [self.tokenizer.encode(self.eval_template.prefix + ch, **kwargs)[-1] for ch in CHOICES]
 
